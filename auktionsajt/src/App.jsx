@@ -1,10 +1,12 @@
-import './App.css'
+import fuad from "./components/AuctionCard";
+import "./App.css";
 
 function App() {
   return (
-  <>
-</>
-  )
+    <>
+      <fuad />
+    </>
+  );
 }
 
-export default App
+export default App;
