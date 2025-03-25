@@ -1,4 +1,4 @@
-/* import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -13,10 +13,10 @@ function NavBar() {
             <Link to="/auctions" className="text-white hover:underline">Auctions</Link>
           </li>
           <li>
-            <Link to="/my-bids" className="text-white hover:underline">My Bids</Link>
+            <Link to="/my-bids" className="text-white hover:underline">Mina bud </Link>
           </li>
           <li>
-            <Link to="/login" className="text-white hover:underline">Login</Link>
+            <Link to="/login" className="text-white hover:underline">Logga in </Link>
           </li>
         </ul>
       </div>
@@ -26,4 +26,3 @@ function NavBar() {
 
 export default NavBar;
 
-*/
