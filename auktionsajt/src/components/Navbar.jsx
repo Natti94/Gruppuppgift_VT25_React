@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 function NavBar() {
+  console.log("NavBar renderas!");
+
   return (
     <nav className="bg-blue-600 p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">

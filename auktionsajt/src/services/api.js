@@ -3,4 +3,3 @@ export const getUserBids = async (userId) => {
     if (!response.ok) throw new Error("Misslyckades med att hämta bud");
     return response.json();
   };
-  
