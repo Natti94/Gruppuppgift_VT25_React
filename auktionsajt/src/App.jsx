@@ -1,12 +1,16 @@
-import fuad from "./components/AuctionCard";
+// import NavBar from "./components/Navbar";
 import "./App.css";
+import BidForm from "./components/BidForm";
 
 function App() {
   return (
     <>
-      <fuad />
+   
+      <BidForm />
     </>
   );
 }
+
+
 
 export default App;
