@@ -1,0 +1,51 @@
+.auction-container {
+    padding: 20px;
+  }
+  
+  .auction-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auction-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .auction-card p {
+    margin: 5px 0;
+  }
+  
+  .bid-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .bid-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .bid-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bid-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: green;
+  }
+  

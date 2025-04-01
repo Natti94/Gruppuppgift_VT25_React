@@ -3,18 +3,10 @@ import { createContext, useState } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [user, setUser] = useState({
-    id: 1,
-    name: "Test Användare",
-    email: "test@example.com",
-  });
-
-  const logout = () => {
-    setUser(null);
-  };
+  const [user, setUser] = useState(null);
 
   return (
-    <AppContext.Provider value={{ user, logout }}>
+    <AppContext.Provider value={{ user, setUser }}>
       {children}
     </AppContext.Provider>
   );

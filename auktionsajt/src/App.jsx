@@ -1,18 +1,13 @@
-import NavBar from "./components/Navbar";
-import BidForm from "./components/BidForm";
-import Profile from "./pages/Profile";
-import "./App.css";
+import AuctionList from "./components/AuctionList/AuctionList"
 import { BrowserRouter } from "react-router-dom";
 import { AppProvider } from "./context/AppContext";
+import "./App.css";
 
 function App() {
   return (
-   
     <BrowserRouter>
       <AppProvider>
-      <NavBar />
-      <BidForm />
-        <Profile />
+        <AuctionList />
       </AppProvider>
     </BrowserRouter>
   );
