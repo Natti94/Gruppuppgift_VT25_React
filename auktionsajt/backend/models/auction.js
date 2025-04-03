@@ -1,13 +1,20 @@
-import { Schema, model } from "mongoose";
+import mongoose from "mongoose";
 
-const AuctionSchema = new Schema({
+const AuctionSchema = new mongoose.Schema({
   title: String,
   description: String,
   startingPrice: Number,
   currentBid: { type: Number, default: 0 },
-  bids: [{ amount: Number, timestamp: Date }],
+  bids: [
+    {
+      user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+      amount: Number,
+      timestamp: Date,
+    },
+  ],
+  owner: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   startTime: { type: Date, default: Date.now },
-  endTime: Date, // Slutdatum för auktionen
+  endTime: Date,
 });
 
-export default model("Auction", AuctionSchema);
+export default mongoose.model("Auction", AuctionSchema);

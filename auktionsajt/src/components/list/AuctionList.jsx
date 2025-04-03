@@ -1,5 +1,5 @@
 import useAuctionData from "../../hooks/useAuctionData";
-import AuctionCard from "../AuctionCard/AuctionCard";
+import AuctionCard from "../card/AuctionCard";
 import "./AuctionList.css";
 
 export default function AuctionList() {
