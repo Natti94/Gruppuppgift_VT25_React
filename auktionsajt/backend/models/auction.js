@@ -9,7 +9,7 @@ const AuctionSchema = new mongoose.Schema({
     {
       user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
       amount: Number,
-      timestamp: Date,
+      timestamp: { type: Date, default: Date.now },
     },
   ],
   owner: { type: mongoose.Schema.Types.ObjectId, ref: "User" },

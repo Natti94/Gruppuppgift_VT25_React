@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { placeBid } from "../../services/api";
+import { placeBid } from "../../../backend/services/api";
 import "../AuctionList/AuctionList.css"
 
 export default function BidForm({ auctionId }) {

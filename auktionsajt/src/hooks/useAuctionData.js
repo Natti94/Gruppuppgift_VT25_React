@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getAuctions } from "../services/api";
+import { getAuctions } from "../../backend/services/api";
 
 export default function useAuctionData() {
   const [auctions, setAuctions] = useState([]);

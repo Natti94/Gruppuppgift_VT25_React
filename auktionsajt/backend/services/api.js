@@ -1,6 +1,5 @@
-const API_URL = "http://localhost:5000"; // Ingen /api behövs
+const API_URL = "http://localhost:5000";
 
-// Hämta alla auktioner
 export const getAuctions = async () => {
   try {
     const response = await fetch(`${API_URL}/auctions`);
@@ -8,11 +7,10 @@ export const getAuctions = async () => {
     return response.json();
   } catch (error) {
     console.error(error);
-    throw error; // Kasta felet så det kan hanteras i hook
+    throw error;
   }
 };
 
-// Skapa en ny auktion
 export const createAuction = async (auction) => {
   try {
     const response = await fetch(`${API_URL}/auctions`, {
@@ -28,7 +26,6 @@ export const createAuction = async (auction) => {
   }
 };
 
-// Lägg ett bud
 export const placeBid = async (auctionId, amount) => {
   try {
     const response = await fetch(`${API_URL}/auctions/${auctionId}/bid`, {

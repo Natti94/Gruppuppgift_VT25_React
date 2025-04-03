@@ -1,4 +1,4 @@
-import AuctionList from "./components/AuctionList/AuctionList"
+import AuctionList from "./components/list/AuctionList"
 import { BrowserRouter } from "react-router-dom";
 import { AppProvider } from "./context/AppContext";
 import "./App.css";
